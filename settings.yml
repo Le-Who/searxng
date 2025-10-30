@@ -1,0 +1,27 @@
+use_default_settings: true
+
+server:
+  port: 8080
+  bind_address: 0.0.0.0
+  secret_key: "replace_this_with_random_secret"
+  base_url: "https://your-project-name.northflank.app/"
+  image_proxy: true
+
+ui:
+  static_use_hash: true
+  theme_args:
+    simple_style: auto
+
+engines:
+  - name: google
+    disabled: false
+  - name: duckduckgo
+    disabled: false
+  - name: bing
+    disabled: true
+  - name: wikipedia
+    disabled: false
+
+search:
+  safe_search: 0
+  autocomplete: "duckduckgo"
