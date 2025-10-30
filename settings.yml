@@ -4,7 +4,7 @@ server:
   port: 8080
   bind_address: 0.0.0.0
   secret_key: "replace_this_with_random_secret"
-  base_url: "https://your-project-name.northflank.app/"
+  base_url: "p01--searxng--24g85n86rvmw.code.run/"
   image_proxy: true
 
 ui:
@@ -18,9 +18,9 @@ engines:
   - name: duckduckgo
     disabled: false
   - name: bing
-    disabled: true
-  - name: wikipedia
     disabled: false
+  - name: wikipedia
+    disabled: true
 
 search:
   safe_search: 0
